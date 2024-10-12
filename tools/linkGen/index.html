@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>fluffye linkGen</title>
+    <script>
+      function linkGen () {
+        var lgg = document.getElementById("lg-g");
+        lgg.textContent = document.getElementById("lg-t").content;
+        lgg.href = document.getElementById("lg-l").content;
+      }
+    </script>
+  </head>
+  <noscript>
+    <p>needs javascript sorry</p>
+  </noscript>
+  <p>untested btw</p>
+  <text>location: </text>
+  <input type="text" id="lg-l">
+  <text>text: </text>
+  <input type="text" id="lg-t">
+  <button onclick="linkGen">generate</button>
+  <a id="lg-g"></a>
+</html>
